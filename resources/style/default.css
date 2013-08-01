@@ -11,11 +11,29 @@
     white-space: pre;
 }
 
+.term_area > .middle > .center > div > div {
+    /*padding: 0;*/
+    margin-top: -4px;
+    margin-bottom: -4px;
+
+}
+
+@font-face
+{
+    /* Lots of terminal fonts: http://www.lowing.org/fonts/ */
+    font-family: terminal;
+    src: url('/resources/font/consolas.ttf');
+    /*src: url('/resources/font/Inconsolata.otf');*/
+    /*src: url('/resources/font/monaco.ttf');*/
+    /*src: url('/resources/font/fixedsys.ttf');*/
+}
+
 .term_area {
     /* background: -webkit-linear-gradient(-45deg, #000000 0%,#424242 79%,#515151 100%); */
     background-color: black;
     color: white;
-    font-family: monospace;
+    /*font-family: monospace;*/
+    font-family: terminal;
     font-size: 12pt;
     visibility: visible;
     height: 100%;
@@ -81,3 +99,5 @@
     overflow: hidden;
     /* max-height: 20%; */
 }
+
+
